@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 30px;
+    background-color: #f4f4f9;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 660px;
+    margin-bottom: 20px;
+}
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+}
+.contact-form label {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea, button{
+    width: 100%;
+    padding: 8px 0px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type=textf]{
+height: 100px;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+#check{
+    display: inline-block;
+}
+
+input[type=checkbox]{
+    height: auto;
+    width: 15px;
+    padding: 0px 0px;
+    position: sticky;
+     }
+
+     hr{
+        border-color:#aaa;
+        box-sizing:border-box;
+        width:100%;  
+      }
+
+      .atividade-grupo {
+        margin: 20px;
+      }
+      
+      .checkboxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      
+      label {
+        flex: 1 1 auto;
+      }

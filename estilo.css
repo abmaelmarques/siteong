@@ -1,0 +1,339 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    }
+
+body {
+    font-family: 'Soho Pro', sans-serif;
+    line-height: 1.1;
+}
+
+.top-header{
+background-color: #0d0d0d;
+width: 100%;
+top:0;
+left: 0;
+z-index: 1000;
+padding: 5px;
+position: fixed;
+}
+
+.top-header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-header{
+    font-family: 'Soho Pro', sans-serif;
+    position: fixed;
+    width: 100%;
+    top:86px;
+    left: 0;
+    z-index: 1000;
+     }
+
+.button-header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center; /* Centraliza o texto dos itens */
+    list-style-position: inside; /* Para alinhar a marca da lista com o texto */
+}
+
+.button-header nav ul li a{
+   padding: 12px 42px;
+    display: block;
+   
+}
+
+.logo{
+    width: 1%;
+    background-color: transparent;
+    color: transparent;
+    border-radius: 10%;
+    
+    }
+
+.sociais button{
+width: 30px;
+height: 30px;
+}
+
+
+.texto{
+    width: 82%;
+    padding: 11px;
+}
+
+.logotexto{
+   width: 300px;
+   height: 50px;
+   
+}
+
+
+.menu{
+    background-color:#ff0000;
+   }
+
+.menu nav li{
+display: inline-block;
+
+}
+
+.menu nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 40px;
+}
+
+
+.menu nav li a:hover{
+    background-color: #000000;
+    display: block;
+  }
+
+
+.drop{
+    position: absolute;
+    display: none;
+    }
+
+.drop a{
+display: block;
+}
+
+.drop-hover:hover .drop {
+    display: block;
+    background-color: #ff0000;
+    }
+
+
+    .drop-hover1:hover .drop {
+        display: block;
+        background-color: #ff0000;
+        }
+
+
+.logo-redonda {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover; 
+
+
+}
+
+/* Estilização da seção */
+.texto1 {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* Altura mínima para ocupar a maior parte da tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+    color: #000000; /* Cor do texto */
+    text-align: center;
+}
+
+/* Imagem de fundo com opacidade usando ::before */
+.texto1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background-image: url("img/ong.png");
+    padding: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Opacidade aplicada apenas na imagem */
+    z-index: 1;
+}
+
+/* Estilo do texto */
+.texto1 h3,
+.texto1 h1 {
+    position: relative;
+    z-index: 2; /* Garante que o texto apareça acima da imagem */
+}
+
+/* Estilo do h3 */
+.centered-text {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilo do h1 */
+.texto1 h1 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 1000px;
+}
+
+@font-face {
+    font-family: 'Bush-Script';
+    src: url('font/brushscriptregular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Soho Pro';
+    src: url('font/soho-gothic-pro-regular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Aplicando a fonte ao texto */
+.centered-text {
+    font-family: 'Bush-Script', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: #000000;
+    margin-top: 20px;
+}
+
+
+.trecho{
+    font-family: 'Bush-Script', sans-serif;
+    color: #000000; /* Cor personalizada para destacar */
+    font-size: 1.4rem;
+    
+}
+
+.texto2{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    display: flex; /* Usa Flexbox para centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Garante que os elementos fiquem em coluna */
+    text-align: center; /* Alinha o texto dentro do contêiner */
+
+
+    }
+
+.texto2 h1{
+    max-width: 600px;
+    text-align: center;
+    font-style: italic;
+}
+
+.texto3{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.whatsapp-button {
+    position: fixed; /* Botão permanece visível enquanto rola */
+    bottom: 20px; /* Distância da parte inferior da página */
+    right: 20px; /* Distância do lado direito da página */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    width: 60px; /* Tamanho do botão */
+    height: 60px;
+    border-radius: 50%; /* Deixa o botão arredondado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    overflow: hidden; /* Remove qualquer conteúdo que ultrapasse o botão */
+}
+
+.whatsapp-button img {
+    width: 100%; /* Faz a imagem ocupar todo o botão */
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem fique proporcional */
+    transition: transform 0.3s; /* Suaviza o efeito de hover */
+}
+
+.whatsapp-button:hover img {
+    transform: scale(1.1); /* Aumenta ligeiramente o botão no hover */
+}
+.text1 {
+    display: flex; /* Ativa Flexbox para criar um layout com divisórias */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    padding: 120px;
+    background-color: #f9f9f9; /* Cor de fundo opcional */
+    min-height: 100vh; /* Garante que ocupe toda a altura da tela */
+}
+
+.text1 .divisoria {
+    width: 80%; /* Ajusta a largura do conteúdo */
+    padding: 20px;
+    border: 1px transparent; /* Bordas das divisórias */
+    background-color: transparent; /* Fundo branco para o texto */
+   }
+
+.text1 h3 {
+    text-align: center; /* Centraliza o título */
+    font-size: 2rem;
+    color: #333; /* Cor do texto */
+}
+
+.text1 h1 {
+    font-size: 1.2rem; /* Tamanho do texto */
+    line-height: 1.8; /* Altura da linha para melhorar a leitura */
+    color: #555; /* Cor do texto */
+    text-align: justify;
+}
+
+.text1 h2 {
+    text-align: center;
+    font-style: italic;
+    }
+
+
+    
+
+    footer {
+        background-color: rgb(0, 87, 166);
+           }
+
+    .centered-text4 {
+        font-family: 'Soho Pro';
+        text-align: center;
+        font-size: 1rem;
+        color: #f8f8f8;
+        font-weight: normal;
+        font-style: normal;
+          }
+
+    footer h1{
+        color:#f8f8f8;
+        font-family: 'Soho Pro';
+        font-size: 0.8rem;
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        padding: 18px;
+    }
+
+    footer a{
+        color:#f8f8f8;
+        
+                   }
+
+    footer h1 img{
+     width: 25px; 
+    height: 25px;
+    }
+    
+    
